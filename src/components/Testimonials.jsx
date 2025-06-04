@@ -14,7 +14,7 @@ const Testimonials = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white md:mb-6 mb-2">
           Why Hire Me?
         </h2>
         <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
