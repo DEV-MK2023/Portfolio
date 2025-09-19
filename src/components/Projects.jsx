@@ -4,30 +4,6 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects and skills.",
-    image: "/pic2.jpeg",
-    tech: ["React", "TailwindCSS", "Framer Motion"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Task Manager",
-    description: "A full-stack app for managing daily tasks with authentication.",
-    image: "/pic5.jpeg",
-    tech: ["MERN", "JWT", "Redux"],
-    github: "https://github.com/DEV-MK2023/Task-Manager",
-    demo: "https://taskymanag3r.netlify.app",
-  },
-  {
-    title: "Shopify",
-    description: "An online store with product filters, cart, and checkout system.",
-    image: "/pic4.jpeg",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "https://github.com/DEV-MK2023/Shopify",
-    demo: "https://shopifystor.netlify.app",
-  },
-  {
     title: "Docket Notes",
     description: "A simple notes app built with HTML, SCSS, and JavaScript.",
     image: "/notes.jpeg",
@@ -35,6 +11,31 @@ const projects = [
     github: "https://github.com/DEV-MK2023/Docket-A-Notes-App-.git",
     demo: "https://docket-a-notes-app.vercel.app",
   },
+  {
+    title: "Task Manager",
+    description: "A full-stack app for managing daily tasks with authentication.",
+    image: "/pic5.jpeg",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/DEV-MK2023/Task-Manager",
+    demo: "https://taskymanag3r.netlify.app",
+  },
+  {
+    title: "Shopify",
+    description: "An online store with product filters, cart, and checkout system.",
+    image: "/pic4.jpeg",
+    tech: ["HTML", "CSS","Jquery"],
+    github: "https://github.com/DEV-MK2023/Shopify",
+    demo: "https://shopifystor.netlify.app",
+  },
+  {
+    title: "Colors Hunt Clone",
+    description: "An elegant color palette UI.Features include real-time search, category filtering, and interactive sorting for a seamless user experience.",
+    image: "/colors.jpeg",
+    tech: ["HTML", "CSS","JavaScript"],
+    github: "https://github.com/DEV-MK2023/Colors-Hunt.git",
+    demo: "https://colors-hunt.vercel.app/",
+  },
+  
 ];
 
 const Projects = () => {
