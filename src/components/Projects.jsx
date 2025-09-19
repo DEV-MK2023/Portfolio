@@ -27,6 +27,14 @@ const projects = [
     github: "https://github.com/DEV-MK2023/Shopify",
     demo: "https://shopifystor.netlify.app",
   },
+  {
+    title: "Docket Notes",
+    description: "A simple notes app built with HTML, SCSS, and JavaScript.",
+    image: "/notes.jpeg",
+    tech: ["HTML", "CSS", "JavaScript", "SCSS"],
+    github: "https://github.com/DEV-MK2023/Docket-A-Notes-App-.git",
+    demo: "https://docket-a-notes-app.vercel.app",
+  },
 ];
 
 const Projects = () => {
