@@ -5,9 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const skills = [
   { name: "JavaScript", level: 80 },
   { name: "React", level: 75 },
-  { name: "Node.js", level: 70 },
-  { name: "Express", level: 65 },
-  { name: "MongoDB", level: 60 },
+  { name: "Node.js", level: 30 },
+  { name: "MongoDB", level: 20 },
   { name: "TailwindCSS", level: 85 },
   { name: "Git", level: 70 },
   { name: "Framer Motion", level: 60 },
@@ -53,9 +52,8 @@ const About = () => {
         <div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">About Me</h2>
           <p className="text-slate-300 text-lg leading-relaxed mb-8">
-            I'm a passionate MERN Stack Developer dedicated to crafting performant and scalable web
-            experiences. With an eye for clean UI and a solid backend mindset, I bridge design and
-            engineering for seamless digital solutions.
+            Hi, I'm Muneeb Zafar — a passionate Frontend Developer with hands-on experience in HTML, CSS, JavaScript, Tailwind CSS, and React. I love turning ideas into responsive, clean, and user-friendly web interfaces that not only look great but also perform smoothly.
+I focus on writing clean code, creating modern UI designs, and ensuring a seamless user experience. Currently, I’m also exploring backend development to become a more well-rounded developer.
           </p>
 
           <h3 className="text-xl font-semibold text-blue-400 mb-4">Technologies I Use</h3>
