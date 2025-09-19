@@ -22,11 +22,11 @@ const Hero = () => {
         </h1>
 
         <h2 className="text-xl sm:text-2xl text-blue-400 font-medium mb-6">
-          MERN Stack Developer
+          FrontEnd Developer
         </h2>
 
         <p className="text-slate-300 mb-8 max-w-lg mx-auto md:mx-0">
-          I craft high-performance, scalable, and modern web applications using MongoDB, Express, React, and Node.js.
+          I specialize in building modern, responsive, and scalable web interfaces. With a focus on performance and usability, I turn ideas into seamless digital experiences.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
