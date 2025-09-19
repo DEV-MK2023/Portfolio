@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Task Manager",
     description: "A full-stack app for managing daily tasks with authentication.",
-    image: "/pic5.jpeg",
+    image: "/task.jpeg",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/DEV-MK2023/Task-Manager",
     demo: "https://taskymanag3r.netlify.app",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Shopify",
     description: "An online store with product filters, cart, and checkout system.",
-    image: "/pic4.jpeg",
+    image: "/shopify.jpeg",
     tech: ["HTML", "CSS","Jquery"],
     github: "https://github.com/DEV-MK2023/Shopify",
     demo: "https://shopifystor.netlify.app",
