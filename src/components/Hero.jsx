@@ -17,29 +17,29 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
           Hi, I'm{" "}
           <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            M.Muneeb
+            M. Muneeb
           </span>
         </h1>
 
         <h2 className="text-xl sm:text-2xl text-blue-400 font-medium mb-6">
-          FrontEnd Developer
+          Full-Stack Web Developer
         </h2>
 
         <p className="text-slate-300 mb-8 max-w-lg mx-auto md:mx-0">
-          I specialize in building modern, responsive, and scalable web interfaces. With a focus on performance and usability, I turn ideas into seamless digital experiences.
+          I specialize in building responsive frontend interfaces and robust backend systems. Experienced in creating seamless user experiences with React and developing dynamic server-side logic using Laravel, PHP, and MySQL.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
           <a
             href="/Muneeb_Zafar_CV1.pdf"
             download
-            className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow hover:scale-105 hover:shadow-lg transition-transform duration-300"
+            className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow text-center hover:scale-105 hover:shadow-lg transition-transform duration-300"
           >
             Download CV
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 border border-blue-500 text-blue-400 rounded-lg hover:bg-blue-500 hover:text-white transition duration-300"
+            className="px-6 py-3 border border-blue-500 text-blue-400 rounded-lg text-center hover:bg-blue-500 hover:text-white transition duration-300"
           >
             Contact Me
           </a>
@@ -55,7 +55,7 @@ const Hero = () => {
       >
         <img
           src="/muneeb.jpeg"
-          alt="Developer Illustration"
+          alt="Muhammad Muneeb Zafar"
           className="w-full md:w-[45%] max-w-md rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
         />
       </motion.div>
