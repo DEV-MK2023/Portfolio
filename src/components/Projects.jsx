@@ -28,6 +28,14 @@ const projects = [
     demo: "https://shopifystor.netlify.app",
   },
   {
+    title: "FurniSpace",
+    description: "A sleek, responsive furniture e-commerce landing page featuring an advanced product search filter, video integration, and clean 'shop by room' layout structures.",
+    image: "/furniture.jpeg",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/DEV-MK2023/E-Com-Web.git", 
+    demo: "https://e-com-we.netlify.app/", 
+  },
+  {
     title: "Colors Hunt Clone",
     description: "An elegant color palette UI.Features include real-time search, category filtering, and interactive sorting for a seamless user experience.",
     image: "/colors.jpeg",
