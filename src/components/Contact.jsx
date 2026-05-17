@@ -20,7 +20,7 @@ const Contact = () => {
       name: "WhatsApp",
       icon: <FaWhatsapp className="text-green-500 w-8 h-8" />,
       url: "https://wa.me/923279690976",
-      value: "+92 307 7206321",
+      value: "+92 327 9690976",
     },
     {
       name: "LinkedIn",
