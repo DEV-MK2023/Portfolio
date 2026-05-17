@@ -19,19 +19,19 @@ const Contact = () => {
     {
       name: "WhatsApp",
       icon: <FaWhatsapp className="text-green-500 w-8 h-8" />,
-      url: "https://wa.me/923077206321",
+      url: "https://wa.me/923279690976",
       value: "+92 307 7206321",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedinIn className="text-blue-500 w-8 h-8" />,
-      url: "https://linkedin.com/in/muneeb-zafar", // Update this with your actual linkedin slug if different
+      url: "https://linkedin.com/in/muneeb-zafar",
       value: "Connect on LinkedIn",
     },
     {
       name: "GitHub",
       icon: <FaGithub className="text-slate-300 w-8 h-8" />,
-      url: "https://github.com/nostal911", // Your GitHub link based on your terminal username
+      url: "https://github.com/DEV-MK2023",
       value: "View My Code",
     },
   ];
