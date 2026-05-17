@@ -30,7 +30,7 @@ const projects = [
   {
     title: "FurniSpace",
     description: "A sleek, responsive furniture e-commerce landing page featuring an advanced product search filter, video integration, and clean 'shop by room' layout structures.",
-    image: "/furniture.jpeg",
+    image: "/furniture.png",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/DEV-MK2023/E-Com-Web.git", 
     demo: "https://e-com-we.netlify.app/", 
