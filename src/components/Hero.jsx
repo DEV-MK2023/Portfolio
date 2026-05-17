@@ -22,7 +22,7 @@ const Hero = () => {
         </h1>
 
         <h2 className="text-xl sm:text-2xl text-blue-400 font-medium mb-6">
-          FrontEnd Developer
+          FullStack Web Developer
         </h2>
 
         <p className="text-slate-300 mb-8 max-w-lg mx-auto md:mx-0">
