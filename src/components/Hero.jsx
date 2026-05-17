@@ -54,7 +54,7 @@ const Hero = () => {
         className="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center"
       >
         <img
-          src="/pic.jpg"
+          src="/muneeb.jpg"
           alt="Developer Illustration"
           className="w-full md:w-[45%] max-w-md rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
         />
