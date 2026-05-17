@@ -22,11 +22,11 @@ const Hero = () => {
         </h1>
 
         <h2 className="text-xl sm:text-2xl text-blue-400 font-medium mb-6">
-          Full-Stack Web Developer
+          FrontEnd Developer
         </h2>
 
         <p className="text-slate-300 mb-8 max-w-lg mx-auto md:mx-0">
-          I specialize in building responsive frontend interfaces and robust backend systems. Experienced in creating seamless user experiences with React and developing dynamic server-side logic using Laravel, PHP, and MySQL.
+          I specialize in building modern, responsive, and scalable web interfaces with a strong focus on clean design, performance, and usability. Additionally, I have hands-on experience integrating frontend components with database systems and backend logic (Laravel/PHP).
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
