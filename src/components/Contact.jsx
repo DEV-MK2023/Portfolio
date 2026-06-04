@@ -25,7 +25,7 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: <FaLinkedinIn className="text-blue-500 w-8 h-8" />,
-      url: "https://linkedin.com/in/muneeb-zafar",
+      url: "https://www.linkedin.com/in/muneeb-zafar-4791672a7/",
       value: "Connect on LinkedIn",
     },
     {
