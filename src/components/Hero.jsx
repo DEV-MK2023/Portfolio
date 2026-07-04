@@ -22,16 +22,15 @@ const Hero = () => {
         </h1>
 
         <h2 className="text-xl sm:text-2xl text-blue-400 font-medium mb-6">
-          FullStack Web Developer
+          Web Developer
         </h2>
 
         <p className="text-slate-300 mb-8 max-w-lg mx-auto md:mx-0">
-          I specialize in building modern, responsive, and scalable web interfaces with a strong focus on clean design, performance, and usability. Additionally, I have hands-on experience integrating frontend components with database systems and backend logic (Laravel/PHP).
-        </p>
+I build modern and responsive web applications using HTML, CSS, JavaScript, and React.js. My primary focus is frontend development, with experience integrating REST APIs. I enjoy creating clean, user friendly interfaces while continuously expanding my technical skills.        </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
           <a
-            href="/Muneeb-Cv1.pdf"
+            href="/Muneeb_Cv.pdf"
             download
             className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow text-center hover:scale-105 hover:shadow-lg transition-transform duration-300"
           >
