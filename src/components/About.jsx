@@ -51,10 +51,10 @@ const About = () => {
         <div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">About Me</h2>
           <p className="text-slate-300 text-lg leading-relaxed mb-8">
-            Hi, I'm Muneeb Zafar — a Full-Stack Web Developer with a primary expertise in frontend technologies. I specialize in building highly responsive, clean, and user-friendly web interfaces using React, JavaScript, and Tailwind CSS.
+            Hi, I'm Muneeb Zafar ! A Web Developer with a primary expertise in frontend technologies. I specialize in building highly responsive, clean, and user-friendly web interfaces using React, JavaScript, and Tailwind CSS.
           </p>
           <p className="text-slate-300 text-lg leading-relaxed mb-8">
-            Beyond the user interface, I have practical experience integrating frontend designs with functional backend logic and database systems. Having worked on custom routing and data flows using Laravel, PHP, and MySQL, I understand how full-stack applications connect from end to end, ensuring dynamic and performant digital experiences.
+            I enjoy turning ideas into responsive and intuitive web experiences that are both functional and visually engaging. I believe good frontend development is not just about writing code, but about creating interfaces that are easy to use, accessible, and enjoyable for users.
           </p>
 
           <h3 className="text-xl font-semibold text-blue-400 mb-4">Technologies I Use</h3>
