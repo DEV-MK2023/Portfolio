@@ -19,19 +19,17 @@ const Testimonials = () => {
         </h2>
         
         <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-          I'm <span className="text-blue-400 font-medium">Muneeb</span>, pursuing an 
-          Associate Degree in Web Design & Development at Virtual University. I don't just write frontend code; 
-          I have practical experience bridges the gap between clean user interfaces and functioning backend architectures.
+          I enjoy building responsive and user friendly web applications using modern frontend technologies. I am always willing to learn, adapt to new tools, and improve my development skills through hands on projects and continuous practice.
+ 
         </p>
 
         <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
           My primary strength lies in building modern, fluid UIs using <span className="text-white font-medium">React, JavaScript, and Tailwind CSS</span>. 
-          Additionally, having worked on integrating open-source templates with full-stack frameworks like <span className="text-blue-400 font-medium">Laravel & MySQL</span>, 
-          I possess a strong understanding of database structures, application routing, and full-stack project synchronization.
+         In addition to frontend development, I have experience working with Git, GitHub, Linux environments, and technical troubleshooting, which helps me adapt to different development workflows and solve technical issues effectively.
         </p>
 
         <p className="text-slate-400 mt-6 text-base sm:text-lg leading-relaxed italic">
-          I am highly adaptable, an efficient troubleshooter in Linux environments, and eager to bring value, fresh logic, and dedication to an internship or junior developer role.
+          I am highly adaptable,and looking for an opportunity where I can contribute, learn from experienced developers, and continue growing as a Frontend Developer while delivering reliable and maintainable solutions.
         </p>
       </motion.div>
     </section>
