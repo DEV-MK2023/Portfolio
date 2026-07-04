@@ -58,7 +58,7 @@ const Contact = () => {
         {/* Location Tag */}
         <div className="flex items-center justify-center gap-2 text-blue-400 mb-10 font-medium">
           <FaMapMarkerAlt className="w-5 h-5 animate-pulse" />
-          <span>Lahore, Pakistan</span>
+          <span>Gujrat, Pakistan</span>
         </div>
 
         {/* Contacts Grid */}
