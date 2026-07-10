@@ -7,7 +7,8 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+function App() 
+{
   return (
     <>
     <div className="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white">
