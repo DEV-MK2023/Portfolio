@@ -12,7 +12,24 @@ const technologies = [
   "Node.js",
   "Express.js",
   "MongoDB",
+  "REST APIs",
   "Git & GitHub",
+];
+
+
+const highlights = [
+  {
+    number: "5+",
+    text: "Web Projects"
+  },
+  {
+    number: "2+",
+    text: "Years Learning"
+  },
+  {
+    number: "Full Stack",
+    text: "Development Focus"
+  }
 ];
 
 
@@ -52,7 +69,7 @@ function About() {
 
           initial={{
             opacity:0,
-            x:-50
+            x:-60
           }}
 
           whileInView={{
@@ -65,13 +82,11 @@ function About() {
           }}
 
           transition={{
-            duration:0.7
+            duration:0.8
           }}
 
-          className="
-          flex
-          justify-center
-          "
+          className="flex justify-center"
+
         >
 
           <div className="relative">
@@ -82,15 +97,24 @@ function About() {
               absolute
               inset-0
               bg-gradient-to-r
-              from-cyan-500
+              from-cyan-400
+              via-blue-500
               to-purple-600
               blur-3xl
-              opacity-20
+              opacity-25
               "
             />
 
 
-            <img
+            <motion.img
+
+              whileHover={{
+                scale:1.03
+              }}
+
+              transition={{
+                duration:0.3
+              }}
 
               src="/about.jpeg"
 
@@ -118,12 +142,11 @@ function About() {
 
         {/* Content */}
 
-
         <motion.div
 
           initial={{
             opacity:0,
-            x:50
+            x:60
           }}
 
           whileInView={{
@@ -136,7 +159,7 @@ function About() {
           }}
 
           transition={{
-            duration:0.7
+            duration:0.8
           }}
 
         >
@@ -145,7 +168,7 @@ function About() {
           <p
             className="
             text-cyan-400
-            font-medium
+            font-semibold
             mb-3
             "
           >
@@ -153,15 +176,20 @@ function About() {
           </p>
 
 
+
           <h2
             className="
-            text-4xl
+            text-3xl
+            sm:text-4xl
             font-bold
             text-white
             mb-6
+            leading-tight
             "
           >
-            Building clean and responsive web experiences
+
+            Building modern web applications with clean code and thoughtful design
+
           </h2>
 
 
@@ -173,11 +201,14 @@ function About() {
             mb-5
             "
           >
+
             I'm Muhammad Muneeb Zafar, a Web Design & Development student
-            focused on building modern and responsive web applications.
-            I enjoy creating user-friendly interfaces and understanding
-            how different parts of a web application work together.
+            focused on creating responsive and user-friendly web applications.
+            I enjoy turning ideas into practical digital solutions while
+            continuously improving my development skills.
+
           </p>
+
 
 
 
@@ -188,11 +219,78 @@ function About() {
             mb-8
             "
           >
-            Alongside frontend development, I have been exploring backend
-            technologies like Node.js, Express, and MongoDB. I enjoy
-            debugging problems, improving my code, and building projects
-            that solve real-world problems.
+
+            My primary experience is in frontend development with React,
+            JavaScript, and Tailwind CSS. I also work with backend
+            technologies like Node.js, Express, and MongoDB to understand
+            how complete web applications are built.
+
           </p>
+
+
+
+
+          {/* Highlights */}
+
+          <div
+            className="
+            grid
+            grid-cols-3
+            gap-3
+            mb-8
+            "
+          >
+
+            {
+              highlights.map((item,index)=>(
+
+                <motion.div
+
+                  key={index}
+
+                  whileHover={{
+                    y:-5
+                  }}
+
+                  className="
+                  bg-white/5
+                  border
+                  border-white/10
+                  rounded-xl
+                  p-3
+                  text-center
+                  "
+
+                >
+
+                  <h3
+                    className="
+                    text-cyan-400
+                    font-bold
+                    text-lg
+                    "
+                  >
+                    {item.number}
+                  </h3>
+
+                  <p
+                    className="
+                    text-xs
+                    text-slate-400
+                    "
+                  >
+                    {item.text}
+                  </p>
+
+
+                </motion.div>
+
+              ))
+            }
+
+
+          </div>
+
 
 
 
@@ -205,8 +303,11 @@ function About() {
             mb-5
             "
           >
+
             Technologies I Work With
+
           </h3>
+
 
 
 
@@ -241,8 +342,14 @@ function About() {
                   }}
 
                   transition={{
-                    delay:index*0.08
+                    delay:index*0.06
                   }}
+
+
+                  whileHover={{
+                    scale:1.05
+                  }}
+
 
                   className="
                   px-4
@@ -254,7 +361,6 @@ function About() {
                   text-center
                   text-slate-200
                   hover:border-cyan-400
-                  hover:-translate-y-1
                   transition
                   "
 
@@ -272,7 +378,6 @@ function About() {
           </div>
 
 
-
         </motion.div>
 
 
@@ -280,7 +385,6 @@ function About() {
 
 
     </section>
-
 
   );
 
