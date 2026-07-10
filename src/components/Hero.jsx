@@ -1,13 +1,11 @@
-// src/components/sections/Hero.jsx
+// src/components/sections/Her.jsx
 
 import { motion } from "framer-motion";
 
 
 function Hero() {
 
-
   return (
-
 
     <section
       id="home"
@@ -20,7 +18,6 @@ function Hero() {
       pt-28
       "
     >
-
 
 
       <div
@@ -37,92 +34,52 @@ function Hero() {
 
 
 
-
-
-        {/* Content */}
-
+        {/* Left Content */}
 
         <motion.div
 
-
           initial={{
-            opacity:0,
-            x:-60
+            opacity: 0,
+            x: -50
           }}
-
 
           animate={{
-            opacity:1,
-            x:0
+            opacity: 1,
+            x: 0
           }}
-
 
           transition={{
-            duration:0.8,
-            ease:"easeOut"
+            duration: 0.8,
+            ease: "easeOut"
           }}
-
 
         >
 
 
-
-
-          <motion.span
-
-            initial={{
-              opacity:0,
-              y:-20
-            }}
-
-            animate={{
-              opacity:1,
-              y:0
-            }}
-
-            transition={{
-              delay:0.2
-            }}
-
+          <p
             className="
-            inline-block
-            px-4
-            py-2
-            rounded-full
-            bg-cyan-500/10
-            border
-            border-cyan-400/20
             text-cyan-400
-            text-sm
-            mb-5
+            font-medium
+            mb-4
             "
-
           >
-
-            Frontend Developer
-
-          </motion.span>
-
-
-
+            Hello, I'm
+          </p>
 
 
 
           <h1
-
             className="
             text-5xl
-            lg:text-7xl
+            lg:text-6xl
             font-extrabold
             leading-tight
             "
-
           >
 
             Muhammad
 
             <span
-
               className="
               block
               bg-gradient-to-r
@@ -132,79 +89,53 @@ function Hero() {
               bg-clip-text
               text-transparent
               "
-
             >
-
               Muneeb Zafar
-
             </span>
-
 
           </h1>
 
 
 
 
-
-          <motion.h2
-
-            initial={{
-              opacity:0
-            }}
-
-            animate={{
-              opacity:1
-            }}
-
-            transition={{
-              delay:0.5
-            }}
-
+          <h2
             className="
-            text-2xl
+            text-3xl
+            lg:text-4xl
+            font-semibold
             mt-5
-            text-slate-300
+            bg-gradient-to-r
+            from-cyan-400
+            to-blue-500
+            bg-clip-text
+            text-transparent
             "
-
           >
-
-            Building modern web experiences 🚀
-
-          </motion.h2>
-
-
-
+            Frontend Developer
+          </h2>
 
 
 
 
           <p
-
             className="
             mt-6
             text-slate-400
             max-w-xl
             leading-relaxed
             "
-
           >
-
             I build responsive and user-friendly web applications
-            using HTML, CSS, JavaScript, React.js, and modern
-            frontend technologies. I focus on creating clean
-            interfaces, solving problems, and continuously improving
-            my development skills.
-
+            using React.js, JavaScript, and modern frontend
+            technologies. I enjoy creating clean interfaces,
+            solving problems, and continuously improving my skills
+            through real-world projects.
           </p>
 
 
 
 
-
-
-
           <div
-
             className="
             flex
             flex-col
@@ -212,10 +143,7 @@ function Hero() {
             gap-5
             mt-8
             "
-
           >
-
-
 
 
             <motion.a
@@ -224,16 +152,13 @@ function Hero() {
 
               download
 
-
               whileHover={{
-                scale:1.05
+                scale: 1.05
               }}
-
 
               whileTap={{
-                scale:0.95
+                scale: 0.95
               }}
-
 
               className="
               px-7
@@ -245,7 +170,6 @@ function Hero() {
               shadow-lg
               text-center
               "
-
             >
 
               Download CV
@@ -255,22 +179,17 @@ function Hero() {
 
 
 
-
-
             <motion.a
 
               href="#projects"
-
 
               whileHover={{
                 scale:1.05
               }}
 
-
               whileTap={{
                 scale:0.95
               }}
-
 
               className="
               px-7
@@ -284,7 +203,6 @@ function Hero() {
               transition
               text-center
               "
-
             >
 
               View Projects
@@ -292,11 +210,7 @@ function Hero() {
             </motion.a>
 
 
-
-
-
           </div>
-
 
 
 
@@ -307,32 +221,24 @@ function Hero() {
 
 
 
-
-
-        {/* Image */}
-
+        {/* Right Image */}
 
 
         <motion.div
 
-
           initial={{
             opacity:0,
-            scale:0.8
+            x:50
           }}
-
 
           animate={{
             opacity:1,
-            scale:1
+            x:0
           }}
-
 
           transition={{
-            duration:0.9,
-            delay:0.2
+            duration:0.8
           }}
-
 
           className="
           flex
@@ -342,61 +248,43 @@ function Hero() {
         >
 
 
-
-
-          <motion.div
-
-
-            animate={{
-              y:[0,-10,0]
-            }}
-
-
-            transition={{
-              duration:4,
-              repeat:Infinity,
-              ease:"easeInOut"
-            }}
-
-
+          <div
             className="
             relative
             "
-
           >
 
 
-
-
-
             <div
-
               className="
               absolute
               inset-0
               bg-gradient-to-r
               from-cyan-500
-              via-blue-500
               to-purple-600
               rounded-3xl
               blur-3xl
               opacity-30
               "
-
             />
 
 
 
-
-
-            <img
-
+            <motion.img
 
               src="/muneeb.jpeg"
 
-
               alt="Muhammad Muneeb Zafar"
 
+              animate={{
+                y:[0,-8,0]
+              }}
+
+              transition={{
+                duration:4,
+                repeat:Infinity,
+                ease:"easeInOut"
+              }}
 
               className="
               relative
@@ -406,20 +294,11 @@ function Hero() {
               shadow-2xl
               border
               border-white/10
-              hover:scale-105
-              transition
-              duration-500
               "
-
             />
 
 
-
-
-
-          </motion.div>
-
-
+          </div>
 
 
 
@@ -427,18 +306,12 @@ function Hero() {
 
 
 
-
       </div>
-
-
 
 
     </section>
 
-
-
   );
-
 
 }
 
