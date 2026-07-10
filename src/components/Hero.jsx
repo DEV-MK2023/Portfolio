@@ -1,4 +1,4 @@
-// src/components/sections/Her.jsx
+// src/components/Hero.jsx
 
 import { motion } from "framer-motion";
 
@@ -27,33 +27,34 @@ function Hero() {
         w-full
         grid
         md:grid-cols-2
-        gap-12
+        gap-14
         items-center
         "
       >
 
 
 
-        {/* Left Content */}
+        {/* Content */}
+
 
         <motion.div
 
           initial={{
-            opacity: 0,
-            x: -50
+            opacity:0,
+            x:-50
           }}
 
           animate={{
-            opacity: 1,
-            x: 0
+            opacity:1,
+            x:0
           }}
 
           transition={{
-            duration: 0.8,
-            ease: "easeOut"
+            duration:0.8
           }}
 
         >
+
 
 
           <p
@@ -65,6 +66,7 @@ function Hero() {
           >
             Hello, I'm
           </p>
+
 
 
 
@@ -98,21 +100,19 @@ function Hero() {
 
 
 
+
           <h2
             className="
-            text-3xl
-            lg:text-4xl
+            text-2xl
+            lg:text-3xl
             font-semibold
             mt-5
-            bg-gradient-to-r
-            from-cyan-400
-            to-blue-500
-            bg-clip-text
-            text-transparent
+            text-slate-200
             "
           >
             Frontend Developer
           </h2>
+
 
 
 
@@ -125,12 +125,15 @@ function Hero() {
             leading-relaxed
             "
           >
+
             I build responsive and user-friendly web applications
             using React.js, JavaScript, and modern frontend
             technologies. I enjoy creating clean interfaces,
-            solving problems, and continuously improving my skills
-            through real-world projects.
+            solving problems, and improving my skills through
+            real-world projects.
+
           </p>
+
 
 
 
@@ -146,6 +149,7 @@ function Hero() {
           >
 
 
+
             <motion.a
 
               href="/Muneeb_Zafar_CV.pdf"
@@ -153,11 +157,11 @@ function Hero() {
               download
 
               whileHover={{
-                scale: 1.05
+                scale:1.05
               }}
 
               whileTap={{
-                scale: 0.95
+                scale:0.95
               }}
 
               className="
@@ -210,8 +214,8 @@ function Hero() {
             </motion.a>
 
 
-          </div>
 
+          </div>
 
 
         </motion.div>
@@ -221,19 +225,21 @@ function Hero() {
 
 
 
-        {/* Right Image */}
+
+        {/* Profile Image */}
+
 
 
         <motion.div
 
           initial={{
             opacity:0,
-            x:50
+            scale:0.85
           }}
 
           animate={{
             opacity:1,
-            x:0
+            scale:1
           }}
 
           transition={{
@@ -248,61 +254,77 @@ function Hero() {
         >
 
 
-          <div
+
+          <motion.div
+
+            animate={{
+              y:[0,-10,0]
+            }}
+
+            transition={{
+              duration:4,
+              repeat:Infinity,
+              ease:"easeInOut"
+            }}
+
             className="
             relative
             "
+
           >
 
 
+
+            {/* Glow */}
+
             <div
+
               className="
               absolute
               inset-0
               bg-gradient-to-r
               from-cyan-500
+              via-blue-500
               to-purple-600
-              rounded-3xl
               blur-3xl
               opacity-30
+              rounded-3xl
               "
+
             />
 
 
 
-            <motion.img
+
+
+            <img
 
               src="/muneeb.jpeg"
 
               alt="Muhammad Muneeb Zafar"
 
-              animate={{
-                y:[0,-8,0]
-              }}
-
-              transition={{
-                duration:4,
-                repeat:Infinity,
-                ease:"easeInOut"
-              }}
-
               className="
               relative
               w-72
-              md:w-96
+              md:w-[420px]
+              aspect-[4/5]
+              object-cover
               rounded-3xl
               shadow-2xl
               border
               border-white/10
               "
+
             />
 
 
-          </div>
+
+          </motion.div>
 
 
 
         </motion.div>
+
 
 
 
