@@ -1,65 +1,258 @@
-// src/components/sections/Hero.jsx
 import { motion } from "framer-motion";
 
-const Hero = () => {
+function Hero() {
+
   return (
+
     <section
       id="home"
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-24 py-16 bg-transparent"
+      className="
+      min-h-screen
+      flex
+      items-center
+      px-6
+      lg:px-20
+      pt-28
+      "
     >
-      {/* Left Side Content */}
-      <motion.div
-        initial={{ opacity: 0, x: -60 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full md:w-1/2 text-center md:text-left"
+
+
+      <div
+        className="
+        max-w-7xl
+        mx-auto
+        w-full
+        grid
+        md:grid-cols-2
+        gap-12
+        items-center
+        "
       >
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
-          Hi, I'm{" "}
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            M. Muneeb
-          </span>
-        </h1>
 
-        <h2 className="text-xl sm:text-2xl text-blue-400 font-medium mb-6">
-          Web Developer
-        </h2>
 
-        <p className="text-slate-300 mb-8 max-w-lg mx-auto md:mx-0">
-I build modern and responsive web applications using HTML, CSS, JavaScript, and React.js. My primary focus is frontend development, with experience integrating REST APIs. I enjoy creating clean, user friendly interfaces while continuously expanding my technical skills.        </p>
+        {/* Content */}
 
-        <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-          <a
-            href="/Muneeb_Cv.pdf"
-            download
-            className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow text-center hover:scale-105 hover:shadow-lg transition-transform duration-300"
+        <motion.div
+
+          initial={{
+            opacity:0,
+            x:-60
+          }}
+
+          animate={{
+            opacity:1,
+            x:0
+          }}
+
+          transition={{
+            duration:0.8
+          }}
+
+        >
+
+
+          <p className="
+          text-cyan-400
+          font-medium
+          mb-4
+          "
           >
-            Download CV
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 border border-blue-500 text-blue-400 rounded-lg text-center hover:bg-blue-500 hover:text-white transition duration-300"
-          >
-            Contact Me
-          </a>
-        </div>
-      </motion.div>
+            Hello, I'm
+          </p>
 
-      {/* Right Side Image */}
-      <motion.div
-        initial={{ opacity: 0, x: 60 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center"
-      >
-        <img
-          src="/muneeb.jpeg"
-          alt="Muhammad Muneeb Zafar"
-          className="w-full md:w-[45%] max-w-md rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
-        />
-      </motion.div>
+
+          <h1
+            className="
+            text-5xl
+            lg:text-7xl
+            font-extrabold
+            leading-tight
+            "
+          >
+
+            Muhammad
+
+            <span
+              className="
+              block
+              bg-gradient-to-r
+              from-cyan-400
+              via-blue-500
+              to-purple-500
+              bg-clip-text
+              text-transparent
+              "
+            >
+              Muneeb Zafar
+            </span>
+
+
+          </h1>
+
+
+
+          <h2
+            className="
+            text-2xl
+            mt-5
+            text-slate-300
+            "
+          >
+            Web Developer
+          </h2>
+
+
+
+          <p
+            className="
+            mt-6
+            text-slate-400
+            max-w-xl
+            leading-relaxed
+            "
+          >
+            I build modern and responsive web applications using
+            HTML, CSS, JavaScript, React.js and Node.js.
+            I enjoy creating clean user interfaces and solving
+            real-world development problems.
+          </p>
+
+
+
+          <div
+            className="
+            flex
+            flex-col
+            sm:flex-row
+            gap-5
+            mt-8
+            "
+          >
+
+
+            <a
+              href="/Muneeb_Zafar_CV.pdf"
+              download
+              className="
+              px-7
+              py-3
+              rounded-full
+              bg-gradient-to-r
+              from-blue-600
+              to-purple-600
+              hover:scale-105
+              transition
+              shadow-lg
+              text-center
+              "
+            >
+              Download CV
+            </a>
+
+
+            <a
+              href="#projects"
+              className="
+              px-7
+              py-3
+              rounded-full
+              border
+              border-cyan-400
+              text-cyan-400
+              hover:bg-cyan-400
+              hover:text-black
+              transition
+              text-center
+              "
+            >
+              View Projects
+            </a>
+
+
+          </div>
+
+
+        </motion.div>
+
+
+
+        {/* Image */}
+
+        <motion.div
+
+          initial={{
+            opacity:0,
+            scale:0.8
+          }}
+
+          animate={{
+            opacity:1,
+            scale:1
+          }}
+
+          transition={{
+            duration:0.8
+          }}
+
+          className="
+          flex
+          justify-center
+          "
+        >
+
+          <div
+            className="
+            relative
+            "
+          >
+
+            <div
+              className="
+              absolute
+              inset-0
+              bg-gradient-to-r
+              from-cyan-500
+              to-purple-600
+              rounded-full
+              blur-3xl
+              opacity-30
+              "
+            />
+
+
+            <img
+
+              src="/muneeb.jpeg"
+
+              alt="Muhammad Muneeb Zafar"
+
+              className="
+              relative
+              w-72
+              md:w-96
+              rounded-3xl
+              shadow-2xl
+              hover:scale-105
+              transition
+              duration-500
+              "
+
+            />
+
+
+          </div>
+
+
+        </motion.div>
+
+
+      </div>
+
+
     </section>
+
   );
-};
+}
+
 
 export default Hero;
