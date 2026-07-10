@@ -68,72 +68,118 @@ function About() {
         <motion.div
 
           initial={{
-            opacity:0,
-            x:-60
+            opacity: 0,
+            x: -60
           }}
 
           whileInView={{
-            opacity:1,
-            x:0
+            opacity: 1,
+            x: 0
           }}
 
           viewport={{
-            once:true
+            once: true
           }}
 
           transition={{
-            duration:0.8
+            duration: 0.8,
+            ease: "easeOut"
           }}
 
-          className="flex justify-center"
+          className="
+  flex
+  justify-center
+  "
 
         >
 
-          <div className="relative">
 
+          <motion.div
+
+            animate={{
+              y: [0, -8, 0]
+            }}
+
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+
+            className="
+    relative
+    "
+
+          >
+
+
+
+            {/* Background Glow */}
 
             <div
-              className="
-              absolute
-              inset-0
-              bg-gradient-to-r
-              from-cyan-400
-              via-blue-500
-              to-purple-600
-              blur-3xl
-              opacity-25
-              "
-            />
-
-
-            <motion.img
-
-              whileHover={{
-                scale:1.03
-              }}
-
-              transition={{
-                duration:0.3
-              }}
-
-              src="/about.jpeg"
-
-              alt="Muhammad Muneeb Zafar"
 
               className="
-              relative
-              w-90
-              md:w-80
-              rounded-3xl
-              shadow-2xl
-              border
-              border-white/10
-              "
+      absolute
+      inset-0
+      bg-gradient-to-r
+      from-cyan-500
+      via-blue-500
+      to-purple-600
+      blur-3xl
+      opacity-25
+      rounded-3xl
+      "
 
             />
 
 
-          </div>
+
+
+            {/* Image Frame */}
+
+            <div
+
+              className="
+      relative
+      rounded-3xl
+      p-[2px]
+      bg-gradient-to-r
+      from-cyan-400
+      via-blue-500
+      to-purple-600
+      "
+
+            >
+
+
+
+              <img
+
+                src="/about.jpeg"
+
+                alt="Muhammad Muneeb Zafar"
+
+                className="
+        w-72
+        md:w-[380px]
+        aspect-[4/5]
+        object-cover
+        rounded-3xl
+        shadow-2xl
+        border
+        border-white/10
+        "
+
+              />
+
+
+
+            </div>
+
+
+
+          </motion.div>
+
 
 
         </motion.div>
@@ -145,21 +191,21 @@ function About() {
         <motion.div
 
           initial={{
-            opacity:0,
-            x:60
+            opacity: 0,
+            x: 60
           }}
 
           whileInView={{
-            opacity:1,
-            x:0
+            opacity: 1,
+            x: 0
           }}
 
           viewport={{
-            once:true
+            once: true
           }}
 
           transition={{
-            duration:0.8
+            duration: 0.8
           }}
 
         >
@@ -242,14 +288,14 @@ function About() {
           >
 
             {
-              highlights.map((item,index)=>(
+              highlights.map((item, index) => (
 
                 <motion.div
 
                   key={index}
 
                   whileHover={{
-                    y:-5
+                    y: -5
                   }}
 
                   className="
@@ -321,33 +367,33 @@ function About() {
           >
 
             {
-              technologies.map((tech,index)=>(
+              technologies.map((tech, index) => (
 
                 <motion.div
 
                   key={tech}
 
                   initial={{
-                    opacity:0,
-                    y:20
+                    opacity: 0,
+                    y: 20
                   }}
 
                   whileInView={{
-                    opacity:1,
-                    y:0
+                    opacity: 1,
+                    y: 0
                   }}
 
                   viewport={{
-                    once:true
+                    once: true
                   }}
 
                   transition={{
-                    delay:index*0.06
+                    delay: index * 0.06
                   }}
 
 
                   whileHover={{
-                    scale:1.05
+                    scale: 1.05
                   }}
 
 
