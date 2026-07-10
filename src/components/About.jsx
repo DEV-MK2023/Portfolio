@@ -122,7 +122,7 @@ function About() {
 
               className="
               relative
-              w-72
+              w-90
               md:w-80
               rounded-3xl
               shadow-2xl
