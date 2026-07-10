@@ -1,86 +1,60 @@
 // src/components/sections/Projects.jsx
 
 import { motion } from "framer-motion";
-
-import {
-  FaGithub,
-  FaExternalLinkAlt,
-} from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 
 const projects = [
-
   {
     title: "Docket Notes",
     description:
-      "A simple notes application built with HTML, SCSS, and JavaScript featuring a clean user interface.",
+      "A simple notes application built with HTML, CSS, JavaScript, and SCSS featuring clean UI and smooth interactions.",
     image: "/notes.jpeg",
     tech: ["HTML", "CSS", "JavaScript", "SCSS"],
-    github:
-      "https://github.com/DEV-MK2023/Docket-A-Notes-App-.git",
-    demo:
-      "https://docket-a-notes-app.vercel.app",
+    github: "https://github.com/DEV-MK2023/Docket-A-Notes-App-.git",
+    demo: "https://docket-a-notes-app.vercel.app",
   },
-
 
   {
     title: "Task Manager",
     description:
-      "A task management application allowing users to organize and manage daily tasks.",
+      "A task management application designed to organize daily tasks with a simple and responsive interface.",
     image: "/task.jpeg",
     tech: ["HTML", "CSS", "JavaScript"],
-    github:
-      "https://github.com/DEV-MK2023/Task-Manager",
-    demo:
-      "https://taskymanag3r.netlify.app",
+    github: "https://github.com/DEV-MK2023/Task-Manager",
+    demo: "https://taskymanag3r.netlify.app",
   },
-
 
   {
     title: "Shopify",
     description:
-      "An e-commerce interface with product filtering, shopping features, and responsive design.",
+      "An e-commerce frontend with product layouts, filtering features, and a modern shopping experience.",
     image: "/shopify.jpeg",
     tech: ["HTML", "CSS", "jQuery"],
-    github:
-      "https://github.com/DEV-MK2023/Shopify",
-    demo:
-      "https://shopifystor.netlify.app",
+    github: "https://github.com/DEV-MK2023/Shopify",
+    demo: "https://shopifystor.netlify.app",
   },
-
 
   {
     title: "FurniSpace",
     description:
-      "A modern furniture e-commerce landing page with search filters, video integration, and responsive layouts.",
-    image:
-      "/furniture.jpeg",
-    tech:
-      ["HTML", "CSS", "JavaScript"],
-    github:
-      "https://github.com/DEV-MK2023/E-Com-Web.git",
-    demo:
-      "https://e-com-we.netlify.app/",
+      "A responsive furniture e-commerce landing page with product filtering, video integration, and modern layouts.",
+    image: "/furniture.jpeg",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/DEV-MK2023/E-Com-Web.git",
+    demo: "https://e-com-we.netlify.app/",
   },
-
 
   {
     title: "Colors Hunt Clone",
     description:
-      "A color palette application with search, filtering, and interactive UI features.",
-    image:
-      "/colors.jpeg",
-    tech:
-      ["HTML", "CSS", "JavaScript"],
-    github:
-      "https://github.com/DEV-MK2023/Colors-Hunt.git",
-    demo:
-      "https://colors-hunt.vercel.app/",
+      "A color palette application featuring search, filtering, and interactive sorting for better user experience.",
+    image: "/colors.jpeg",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/DEV-MK2023/Colors-Hunt.git",
+    demo: "https://colors-hunt.vercel.app/",
   },
-
-
 ];
-
 
 
 const Projects = () => {
@@ -97,8 +71,6 @@ const Projects = () => {
       lg:px-24
       "
     >
-
-
 
 
       {/* Heading */}
@@ -130,17 +102,22 @@ const Projects = () => {
 
       >
 
-
-        <p
+        <span
           className="
+          inline-block
+          px-4
+          py-2
+          rounded-full
+          bg-cyan-500/10
+          border
+          border-cyan-400/20
           text-cyan-400
-          mb-3
-          font-medium
+          text-sm
+          mb-5
           "
         >
           My Work
-        </p>
-
+        </span>
 
 
         <h2
@@ -151,11 +128,8 @@ const Projects = () => {
           text-white
           "
         >
-
           Featured Projects
-
         </h2>
-
 
 
         <p
@@ -166,12 +140,9 @@ const Projects = () => {
           mx-auto
           "
         >
-
-          Some projects that showcase my frontend development skills
-          and problem-solving approach.
-
+          Some of the projects I have built while improving my frontend
+          development skills and exploring modern web technologies.
         </p>
-
 
 
       </motion.div>
@@ -180,23 +151,19 @@ const Projects = () => {
 
 
 
-
-
       {/* Cards */}
-
 
       <div
         className="
+        max-w-7xl
+        mx-auto
         grid
         grid-cols-1
         sm:grid-cols-2
         lg:grid-cols-3
         gap-8
-        max-w-7xl
-        mx-auto
         "
       >
-
 
 
         {
@@ -205,13 +172,12 @@ const Projects = () => {
 
             <motion.div
 
-
-              key={index}
+              key={project.title}
 
 
               initial={{
                 opacity:0,
-                y:40
+                y:50
               }}
 
 
@@ -227,8 +193,8 @@ const Projects = () => {
 
 
               transition={{
-                duration:0.5,
-                delay:index*0.1
+                duration:0.6,
+                delay:index*0.12
               }}
 
 
@@ -238,29 +204,41 @@ const Projects = () => {
               }}
 
 
-
               className="
               group
-              rounded-3xl
-              overflow-hidden
-
+              relative
               bg-white/5
-
-              backdrop-blur-md
-
+              backdrop-blur-lg
               border
               border-white/10
-
-              hover:border-cyan-400/40
-
-              transition
-
+              rounded-3xl
+              overflow-hidden
               shadow-xl
-
+              hover:border-cyan-400/40
+              transition-all
+              duration-300
               "
 
-
             >
+
+
+
+              {/* Glow */}
+
+              <div
+                className="
+                absolute
+                inset-0
+                bg-gradient-to-r
+                from-cyan-500/10
+                to-purple-600/10
+                opacity-0
+                group-hover:opacity-100
+                transition
+                duration-500
+                "
+              />
+
 
 
 
@@ -270,9 +248,9 @@ const Projects = () => {
                 className="
                 relative
                 overflow-hidden
+                h-52
                 "
               >
-
 
                 <img
 
@@ -282,17 +260,14 @@ const Projects = () => {
 
                   className="
                   w-full
-                  h-52
+                  h-full
                   object-cover
-
                   group-hover:scale-110
-
-                  transition
+                  transition-transform
                   duration-500
                   "
 
                 />
-
 
 
                 <div
@@ -300,13 +275,29 @@ const Projects = () => {
                   absolute
                   inset-0
                   bg-gradient-to-t
-                  from-black/60
+                  from-black/70
                   to-transparent
-                  opacity-0
-                  group-hover:opacity-100
-                  transition
                   "
                 />
+
+
+                <span
+                  className="
+                  absolute
+                  top-4
+                  left-4
+                  px-3
+                  py-1
+                  rounded-full
+                  bg-black/50
+                  text-cyan-300
+                  text-xs
+                  border
+                  border-white/10
+                  "
+                >
+                  Project {index+1}
+                </span>
 
 
               </div>
@@ -315,54 +306,39 @@ const Projects = () => {
 
 
 
-
-
-
               {/* Content */}
-
 
               <div
                 className="
+                relative
                 p-6
                 "
               >
 
 
-
                 <h3
-
                   className="
                   text-xl
                   font-bold
                   text-white
                   mb-3
                   "
-
                 >
-
                   {project.title}
-
                 </h3>
 
 
 
-
                 <p
-
                   className="
                   text-slate-400
                   text-sm
                   leading-relaxed
                   mb-5
                   "
-
                 >
-
                   {project.description}
-
                 </p>
-
-
 
 
 
@@ -379,26 +355,22 @@ const Projects = () => {
                 >
 
                   {
-                    project.tech.map((tech,i)=>(
+                    project.tech.map((tech)=>(
 
                       <span
 
-                        key={i}
+                        key={tech}
 
                         className="
-                        text-xs
                         px-3
                         py-1
                         rounded-full
-
-                        bg-cyan-400/10
-
+                        text-xs
+                        text-cyan-300
+                        bg-cyan-500/10
                         border
                         border-cyan-400/20
-
-                        text-cyan-300
                         "
-
                       >
 
                         {tech}
@@ -408,17 +380,13 @@ const Projects = () => {
                     ))
                   }
 
-
                 </div>
 
 
 
 
 
-
-
                 {/* Buttons */}
-
 
                 <div
                   className="
@@ -440,20 +408,13 @@ const Projects = () => {
                     flex
                     items-center
                     gap-2
-
                     px-4
                     py-2
-
-                    rounded-lg
-
+                    rounded-xl
                     bg-white/10
-
                     text-white
-
                     text-sm
-
                     hover:bg-white/20
-
                     transition
                     "
 
@@ -461,10 +422,9 @@ const Projects = () => {
 
                     <FaGithub/>
 
-                    Code
+                    GitHub
 
                   </a>
-
 
 
 
@@ -477,29 +437,20 @@ const Projects = () => {
 
                     rel="noopener noreferrer"
 
-
                     className="
                     flex
                     items-center
                     gap-2
-
                     px-4
                     py-2
-
-                    rounded-lg
-
+                    rounded-xl
                     bg-gradient-to-r
                     from-cyan-500
                     to-blue-600
-
                     text-white
-
                     text-sm
-
                     hover:scale-105
-
                     transition
-
                     "
 
                   >
@@ -515,9 +466,7 @@ const Projects = () => {
 
 
 
-
               </div>
-
 
 
             </motion.div>
@@ -527,16 +476,12 @@ const Projects = () => {
         }
 
 
-
       </div>
-
 
 
     </section>
 
-
   );
-
 
 };
 
