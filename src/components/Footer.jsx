@@ -54,8 +54,8 @@ const Footer = () => {
   const scrollTop = () => {
 
     window.scrollTo({
-      top:0,
-      behavior:"smooth"
+      top: 0,
+      behavior: "smooth"
     });
 
   };
@@ -68,21 +68,21 @@ const Footer = () => {
     <motion.footer
 
       initial={{
-        opacity:0,
-        y:40
+        opacity: 0,
+        y: 40
       }}
 
       whileInView={{
-        opacity:1,
-        y:0
+        opacity: 1,
+        y: 0
       }}
 
       viewport={{
-        once:true
+        once: true
       }}
 
       transition={{
-        duration:0.7
+        duration: 0.7
       }}
 
 
@@ -91,7 +91,7 @@ const Footer = () => {
       overflow-hidden
       border-t
       border-white/10
-      bg-[#020617]
+      bg-transparent
       px-6
       md:px-12
       lg:px-24
@@ -178,7 +178,8 @@ const Footer = () => {
               "
             >
 
-              Frontend Developer building modern web experiences.
+              Frontend Developer focused on building responsive,
+              modern, and user-friendly web applications.
 
             </p>
 
@@ -204,7 +205,7 @@ const Footer = () => {
 
 
             {
-              socials.map((social,index)=>(
+              socials.map((social, index) => (
 
 
                 <motion.a
@@ -219,8 +220,8 @@ const Footer = () => {
 
 
                   whileHover={{
-                    y:-5,
-                    scale:1.1
+                    y: -5,
+                    scale: 1.1
                   }}
 
 
@@ -278,7 +279,7 @@ const Footer = () => {
 
 
             whileHover={{
-              scale:1.05
+              scale: 1.05
             }}
 
 
