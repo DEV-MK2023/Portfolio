@@ -37,7 +37,7 @@ function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
-          ? "bg-slate-900/80 backdrop-blur-xl shadow-lg border-b border-white/10"
+          ? "bg-slate-900/80 backdrop-blur-xl shadow-lg border-b"
           : "bg-transparent"
         }`}
     >
