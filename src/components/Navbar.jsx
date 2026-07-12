@@ -95,7 +95,7 @@ function Navbar() {
 
 
           <a
-            href="/Muneeb-Cv.pdf"
+            href="..../public/Muneeb-Cv.pdf"
             download
             className="
             px-5

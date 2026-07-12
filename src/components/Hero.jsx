@@ -152,7 +152,7 @@ function Hero() {
 
             <motion.a
 
-              href="/Muneeb-Cv.pdf"
+              href="..../public/Muneeb-Cv.pdf"
 
               download
 
